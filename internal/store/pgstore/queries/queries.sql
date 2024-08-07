@@ -19,7 +19,8 @@ RETURNING "id";
 -- name: GetMessage :one
 SELECT
     "id", "room_id", "message", "reaction_count", "answered"
-FROM messages;
+FROM messages
+WHERE "id" = $1;
 
 -- name: GetRoomMessages :many
 SELECT
