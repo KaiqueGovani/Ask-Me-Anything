@@ -1,2 +1,3 @@
 include:
   - ./bff/docker-compose.yaml
+  - ./web/docker-compose.yaml

@@ -9,14 +9,14 @@ import (
 )
 
 type Message struct {
-	ID            uuid.UUID
-	RoomID        uuid.UUID
-	Message       string
-	ReactionCount int64
-	Answered      bool
+	ID            uuid.UUID `json:"id"`
+	RoomID        uuid.UUID `json:"room_id"`
+	Message       string    `json:"message"`
+	ReactionCount int64     `json:"reaction_count"`
+	Answered      bool      `json:"answered"`
 }
 
 type Room struct {
-	ID    uuid.UUID
-	Theme string
+	ID    uuid.UUID `json:"id"`
+	Theme string    `json:"theme"`
 }

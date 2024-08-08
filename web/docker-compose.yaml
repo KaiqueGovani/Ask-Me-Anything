@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    develop:
+      watch:
+        - action: sync
+          path: src/
+          target: /app
+          ignore:
+            - node_modules/
+    ports:
+      - "3000:5173"
