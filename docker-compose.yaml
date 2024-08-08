@@ -1,0 +1,2 @@
+include:
+  - ./bff/docker-compose.yaml
